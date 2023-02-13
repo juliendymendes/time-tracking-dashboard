@@ -102,11 +102,12 @@ body{
 .card-exercise{
 	background:  hsl(145, 58%, 55%) url("images/icon-exercise.svg") no-repeat;
 	background-position: 12rem -4px;
+	background-position: 12rem -2px;
 }
 
 .card-social{
 	background:  hsl(264, 64%, 52%) url("images/icon-social.svg") no-repeat;
-	background-position: 12rem -10px;
+	background-position: 13rem -10px;
 }
 
 .card-self-care{
@@ -117,15 +118,20 @@ body{
 .cards-content .card{
 	margin: 1rem auto;
 	width: 80%;
-	background-position: right -10px;
+	background-size: 25%;
 	padding-top: 2.5rem;
 	border-radius: 15px;
+	cursor: pointer;
 }
 .cards-content .card-content{
 	background-color: hsl(235, 46%, 20%);
 	padding: 1rem;
 	margin: 0 auto;
 	border-radius: 15px;
+}
+
+.cards-content .card-content:hover{
+	background-color: hsl(235, 22%, 47%);
 }
 
 .cards-content .card-content .card-header{
@@ -145,6 +151,7 @@ body{
 .cards-content .card-content .card-header button{
 	background: 0;
 	border: 0;
+	cursor: pointer;
 }
 
 .cards-content .card-content .card-footer{
