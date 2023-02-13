@@ -1,0 +1,170 @@
+body{
+	background-color: hsl(226, 43%, 10%);
+	font-family: 'Rubik', sans-serif;
+}
+
+.content{
+	display: grid;
+}
+
+
+.profile-nav {
+	background-color: hsl(235, 46%, 20%);
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	border-radius: 15px;
+	margin: 0 auto;
+}
+
+.profile-nav .profile {
+	background-color: hsl(246, 80%, 60%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 15px;
+	padding: 1.6rem .9rem;
+}
+
+
+.profile-nav .profile img{
+	border: 3px solid white;
+	border-radius: 120px;
+	width: 50px;
+}
+
+.profile-nav .profile .user-info{
+	margin-left: 1rem;
+}
+.profile-nav .profile .user-info span{
+	color:hsl(236, 100%, 87%);
+	font-size: .8rem;
+	font-weight: 300;
+}
+
+.profile-nav .profile .user-info p{
+	color:  white;
+	font-size: 1.4rem;
+	font-weight: 300;
+	margin: 0;
+	white-space: nowrap;
+}
+
+.profile-nav .times-nav{
+	background-color: hsl(235, 46%, 20%);
+	margin: 1rem 0;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.profile-nav .times-nav button{
+	background: 0;
+	border: 0;
+	color: hsl(235, 45%, 61%);
+	font-family: 'Rubik', sans-serif;
+	font-weight: 400;
+	cursor: pointer;
+}
+
+.profile-nav .times-nav button:focus, .profile-nav .times-nav button:hover{
+	color: #fff;
+}
+
+@media(max-width: 340px){
+	.profile-nav .profile img{
+		width: 40px;
+	}
+
+	.profile-nav .profile .user-info span{
+		font-size: .6rem;
+	}
+	
+	.profile-nav .profile .user-info p{
+		font-size: 1rem;
+	}
+}
+
+.card-work{
+	background: hsl(15, 100%, 70%) url("images/icon-work.svg") no-repeat;
+	background-position: 12rem -10px;
+}
+
+.card-play{
+	background:  hsl(195, 74%, 62%) url("images/icon-play.svg") no-repeat;
+	background-position: 12rem -10px;
+}
+
+.card-study{
+	background:  hsl(348, 100%, 68%) url("images/icon-study.svg") no-repeat;
+	background-position: 12rem -10px;
+}
+
+.card-exercise{
+	background:  hsl(145, 58%, 55%) url("images/icon-exercise.svg") no-repeat;
+	background-position: 12rem -4px;
+}
+
+.card-social{
+	background:  hsl(264, 64%, 52%) url("images/icon-social.svg") no-repeat;
+	background-position: 12rem -10px;
+}
+
+.card-self-care{
+	background:  hsl(43, 84%, 65%) url("images/icon-self-care.svg") no-repeat;
+	background-position: 12rem -10px;
+}
+
+.cards-content .card{
+	margin: 1rem auto;
+	width: 80%;
+	background-position: right -10px;
+	padding-top: 2.5rem;
+	border-radius: 15px;
+}
+.cards-content .card-content{
+	background-color: hsl(235, 46%, 20%);
+	padding: 1rem;
+	margin: 0 auto;
+	border-radius: 15px;
+}
+
+.cards-content .card-content .card-header{
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin: .5rem auto;
+	color: #fff;
+
+}
+.cards-content .card-content .card-header p{
+	margin: 0;
+	font-size: 1.1rem;
+}
+
+
+.cards-content .card-content .card-header button{
+	background: 0;
+	border: 0;
+}
+
+.cards-content .card-content .card-footer{
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 90%;
+	align-items: center;
+	
+}
+
+.cards-content .card-content .card-footer p{
+	color: #fff;
+	font-weight: 300;
+	font-size: 1.7rem;
+	margin: 0;
+}
+
+.cards-content .card-content .card-footer span{
+	color:hsl(236, 100%, 87%);
+	font-size: .8rem;
+	font-weight: 300;
+}
