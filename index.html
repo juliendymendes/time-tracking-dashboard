@@ -12,11 +12,13 @@
 
 	<link rel="stylesheet" href="style.css">
 
+	<script src="script.js"></script>
+
 	<title>Time tracking dashboard</title>
 
 </head>
 
-<body>
+<body onload="showData()">
 
 	<main>
 		<div class="content">
@@ -34,112 +36,15 @@
 				</div>
 
 				<div class="times-nav">
-					<button type="button">Daily</button>
-					<button type="button">Weekly</button>
-					<button type="button">Monthly</button>
+					<button type="button" value="daily" class="times-nav-btn" onclick="handleClickBtn(this)">Daily</button>
+					<button type="button" value="weekly" class="times-nav-btn  active" onclick="handleClickBtn(this)">Weekly</button>
+					<button type="button" value="monthly" class="times-nav-btn" onclick="handleClickBtn(this)">Monthly</button>
 				</div>
 				
 
 			</div>
 
-			<div class="cards-content">
-				
-					<div class="card card-work">
-						<div class="card-content">
-							<div class="card-header">
-								<p>Work</p>
-								<button type="button">
-									<img src="images/icon-ellipsis.svg" alt="Options">
-								</button>
-							</div>
-		
-							<div class="card-footer">
-								<p>32hrs</p>
-								<span>Last week - 36hrs</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="card card-play">
-						<div class="card-content">
-							<div class="card-header">
-								<p>Play</p>
-								<button type="button">
-									<img src="images/icon-ellipsis.svg" alt="Options">
-								</button>
-							</div>
-		
-							<div class="card-footer">
-								<p>10hrs</p>
-								<span>Last week - 8hrs</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="card card-study">
-						<div class="card-content">
-							<div class="card-header">
-								<p>Study</p>
-								<button type="button">
-									<img src="images/icon-ellipsis.svg" alt="Options">
-								</button>
-							</div>
-		
-							<div class="card-footer">
-								<p>4hrs</p>
-								<span>Last week - 7hrs</span>
-							</div>
-						</div>
-					</div>
-					
-					<div class="card card-exercise">
-						<div class="card-content">
-							<div class="card-header">
-								<p>Exercise</p>
-								<button type="button">
-									<img src="images/icon-ellipsis.svg" alt="Options">
-								</button>
-							</div>
-		
-							<div class="card-footer">
-								<p>4hrs</p>
-								<span>Last week - 5hrs</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="card card-social">
-						<div class="card-content">
-							<div class="card-header">
-								<p>Social</p>
-								<button type="button">
-									<img src="images/icon-ellipsis.svg" alt="Options">
-								</button>
-							</div>
-		
-							<div class="card-footer">
-								<p>5hrs</p>
-								<span>Last week - 10hrs</span>
-							</div>
-						</div>
-					</div>
-					
-					<div class="card card-self-care">
-						<div class="card-content">
-							<div class="card-header">
-								<p>Self Care</p>
-								<button type="button">
-									<img src="images/icon-ellipsis.svg" alt="Options">
-								</button>
-							</div>
-		
-							<div class="card-footer">
-								<p>2hrs</p>
-								<span>Last week - 2hrs</span>
-							</div>
-						</div>
-					</div>
-			</div>
+			<div class="cards-content"></div>
 		</div>
 	</main>
 

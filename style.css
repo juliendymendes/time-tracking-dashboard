@@ -66,6 +66,10 @@ body{
 	cursor: pointer;
 }
 
+.active{
+	color: #fff!important;
+}
+
 .profile-nav .times-nav button:focus, .profile-nav .times-nav button:hover{
 	color: #fff;
 }
