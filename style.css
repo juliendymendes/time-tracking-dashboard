@@ -70,20 +70,6 @@ body{
 	color: #fff;
 }
 
-@media(max-width: 340px){
-	.profile-nav .profile img{
-		width: 40px;
-	}
-
-	.profile-nav .profile .user-info span{
-		font-size: .6rem;
-	}
-	
-	.profile-nav .profile .user-info p{
-		font-size: 1rem;
-	}
-}
-
 .card-work{
 	background: hsl(15, 100%, 70%) url("images/icon-work.svg") no-repeat;
 	background-position: 12rem -10px;
@@ -101,7 +87,6 @@ body{
 
 .card-exercise{
 	background:  hsl(145, 58%, 55%) url("images/icon-exercise.svg") no-repeat;
-	background-position: 12rem -4px;
 	background-position: 12rem -2px;
 }
 
@@ -122,12 +107,15 @@ body{
 	padding-top: 2.5rem;
 	border-radius: 15px;
 	cursor: pointer;
+	display: flex;
+	align-items: flex-end;
 }
 .cards-content .card-content{
 	background-color: hsl(235, 46%, 20%);
 	padding: 1rem;
 	margin: 0 auto;
 	border-radius: 15px;
+	width: 100%;
 }
 
 .cards-content .card-content:hover{
@@ -175,3 +163,119 @@ body{
 	font-size: .8rem;
 	font-weight: 300;
 }
+@media(max-width: 340px){
+	.profile-nav .profile img{
+		width: 40px;
+	}
+
+	.profile-nav .profile .user-info span{
+		font-size: .6rem;
+	}
+	
+	.profile-nav .profile .user-info p{
+		font-size: 1rem;
+	}
+}
+
+@media(min-width: 1024px){
+	.content{
+		grid-template-columns: 22% 70%;
+		place-content: center;
+		margin: 5rem 0;
+	}
+
+	.profile-nav{
+		height: 97%;
+	}
+
+	.profile-nav .profile{
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		height: 230px;
+		padding: 1.3rem .9rem;
+	}
+
+	.profile-nav .profile .user-info{
+		margin-top: 1rem;
+		margin-left: 0;
+	}
+
+	.profile-nav .profile .user-info p{
+		white-space: normal;
+		font-size: 1.6rem;
+	}
+
+	.profile-nav .times-nav{
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		gap: .8rem;
+		margin: 1rem;
+	}
+
+	.profile-nav .times-nav button{
+		font-size: 1rem;
+	}
+
+	.cards-content{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.cards-content .card{
+		padding-top: 2.1rem;
+		margin:  auto;
+	}
+	.cards-content .card-content{
+		height: 100px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 1.2rem;
+	}
+
+	.cards-content .card-content .card-header{
+		margin: 1rem auto;
+	}
+	
+	.cards-content .card-content .card-header p{
+		font-size: 1rem;
+	}
+
+	.cards-content .card-content .card-footer{
+		flex-direction: column;
+		align-items: flex-start;
+		gap: .7rem;
+	}
+
+	.cards-content .card-content .card-footer p{
+		font-size: 1.9rem;
+	}
+
+	.card-work{
+		background-position: 10rem -.5rem;
+	}
+	
+	.card-play{
+		background-position: 10rem -.5rem;
+	}
+	
+	.card-study{
+		background-position: 10rem -.5rem;
+	}
+	
+	.card-exercise{
+		background-position: 10rem .1rem;
+	}
+	
+	.card-social{
+		background-position: 10rem -.5rem;
+	}
+	
+	.card-self-care{
+		background-position: 10rem -.5rem;
+	}
+
+}
+
